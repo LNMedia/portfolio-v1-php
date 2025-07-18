@@ -1,0 +1,69 @@
+.linktree {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.treeText {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: clamp(25px, 4vw, 100px);
+    font-family: 'Metal Mania';
+    text-shadow: 2px 2px 4px red;
+    padding-bottom: 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 25px;
+    border-bottom: solid 1px red;
+    white-space: nowrap;
+}
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px; /* Abstand zwischen den Links */
+}
+.link {
+    background-color: rgba(100,100,100,0.5);
+    border: 1px solid #ddd;
+    border-radius: 25px 25px 10px 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    max-width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: 100px;
+    overflow: hidden;
+    font-family: 'Nanum Gothic Coding';
+}
+.link:hover {
+    transform: scale(1.05);
+}
+.banner {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px; 
+}
+
+@media (min-width: 600px) {
+    .link {
+        width: calc(33.33% - 20px); /* 3 Links nebeneinander */
+    }
+}
+@media (min-width: 400px) {
+    .link {
+        width: calc(50% - 20px); /* 2 Links nebeneinander */
+    }
+}
+@media (max-width: 399px) {
+    .link {
+        width: 100%; /* 1 Link pro Zeile */
+    }
+}

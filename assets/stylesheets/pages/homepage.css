@@ -1,0 +1,394 @@
+section {
+    position: relative;
+    width: 90%;
+    max-width: 1050px;
+    height: auto;
+    padding-bottom: 0px;
+    border-radius: 25px;
+    top: 50px;
+    margin-bottom: 50px;
+    left: 50%;
+    background-color: rgba(120,120,120,0.3);
+    transform: translate(-50%);
+    overflow: hidden;
+    backdrop-filter: blur(25px);
+}
+
+/* Sektion 1 */
+.main1_Banner {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    filter: blur(15px);
+    transition: transform 1s, filter 1s;
+    opacity: 0.7;
+}
+.main1_Banner:hover {
+    transform: translate(-50%,-50%) scale(1.1);
+    filter: blur(0);
+}
+.main1_Selfie {
+    position: relative;
+    width: 25%;
+    border-radius: 50%;
+    margin: 25px;
+    border: solid 2.5px red;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    box-shadow: 0 0 50px orange;
+    opacity: 0.8;
+    filter: brightness(100%) contrast(150%) grayscale(25%);
+    -webkit-filter: brightness(100%) contrast(150%) grayscale(25%);
+    transition: filter 1s;
+}
+.main1_Hey {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    top: 50%;
+    left: 35%;
+    transform: translate(0,-50%);
+    color: white;
+    font-size: clamp(15px, 3vw, 35px);
+    font-family: 'Nanum Gothic Coding';
+}
+.main1_Name {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    top: 50%;
+    left: 60%;
+    transform: translate(0,-50%);
+    color: white;
+    font-size: clamp(25px, 5vw, 120px);
+    font-family: 'Metal Mania';
+    text-shadow: 2px 2px 4px red;
+}
+.main1_animatedTextContainer {
+    position: relative;
+    width: 25%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -75px);
+    padding-left: 25px;
+    text-align: left;
+}
+.main1_animatedText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    color: #48ff48e1; /* Typisches Grün für die Commandline */
+    font-size: clamp(15px, 3vw, 30px);
+    white-space: nowrap; /* Text bleibt in einer Zeile */
+    font-family: 'Nanum Gothic Coding';
+    border-right: 2px solid #00FF00; /* Cursor simuliert */
+    display: inline-block;
+    margin-top: 20px;
+}
+@keyframes blink {
+    0% { border-right-color: #00FF00; }
+    50% { border-right-color: transparent; }
+    100% { border-right-color: #00FF00; }
+}
+.main1_animatedText {
+    animation: blink 0.8s steps(1) infinite; /* Cursor blinkt */
+}
+
+/* Header Titles */
+.main2_Header, .main4_Header, .main5_Header, .main6_Header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: clamp(25px, 4vw, 100px);
+    font-family: 'Metal Mania';
+    text-shadow: 2px 2px 4px red;
+    padding-bottom: 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 25px;
+    border-bottom: solid 1px red;
+    white-space: nowrap;
+}
+
+/* Sektion 2 - Übersicht */
+#main2 {
+    padding-bottom: 45px;
+}
+.main2_menuContainer {
+    position: relative;
+    display: flex;
+    overflow-x: scroll;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    max-width: 980px;
+    height: 250px;
+    border-radius: 25px 25px 0 0;
+    top: 35px;
+    left: 50%;
+    margin-bottom: 20px;
+    transform: translate(-50%);
+    background-color: rgba(0,0,0,0.3);
+    scrollbar-width: thin;
+    scrollbar-color: rgba(80,80,80,0.7) rgba(0,0,0,0.3); 
+}
+.main2_MenuPoint {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    min-width: 250px;
+    max-width: 250px;
+    height: 180px;
+    background-color: rgba(150,150,150,0.3);
+    font-family: 'Nanum Gothic Coding';
+    color: white;
+    cursor: grab;
+    font-size: 18px;
+}
+.main2_MenuPoint:hover {
+    transform: scale(1.03) rotate(-3deg);
+    cursor: pointer;
+}
+.main2_MenuPoint:active {
+    transform: scale(0.97) rotate(-6deg);
+}
+.main2_menuContainer::-webkit-scrollbar {
+    height: 10px;
+}
+.main2_menuContainer::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+.main2_menuContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(80,80,80,0.7); /* Farbe des Scrollbar-Daumens */
+    border-radius: 10px;
+    border: 2px solid transparent; /* Platz für Padding */
+    background-clip: padding-box; /* Clip für Padding */
+}
+.main2_menuContainer::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(50,50,50,0.9); /* Hover-Effekt für den Scroll-Daumen */
+}
+.main2_menuPointImage {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.main2_menuPointText {
+    font-size: 18px;
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Sektion 3 - Über Mich */
+#main3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.main3_Header {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: clamp(25px, 4vw, 100px);
+    font-family: 'Metal Mania';
+    text-shadow: 2px 2px 4px red;
+    width: 50%;
+    text-align: center;
+    border-radius: 25px;
+    border-bottom: solid 1px red;
+}
+.main3_AboutMe {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px;
+    border-radius: 25px;
+    width: 85%;
+    margin: 20px 0;
+    background-color: rgba(0,0,0,0.3);
+}
+.main3_Selfie {
+    width: 30%;
+    filter: brightness(100%) contrast(150%) grayscale(25%);
+    -webkit-filter: brightness(100%) contrast(150%) grayscale(25%);
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    z-index: 1;
+    opacity: 0.8;
+}
+.main3_Text {
+    flex: 1;
+    height: auto;
+    max-height: 300px;
+    padding: 0px 15px;
+    border-radius: 25px;
+    color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: clamp(14px, 2vw, 20px);
+    text-align: justify;
+    font-family: 'Nanum Gothic Coding';
+    scrollbar-width: thin;
+    scrollbar-color: gray transparent;
+}
+.main3_Text::-webkit-scrollbar {
+    width: 8px;
+}
+.main3_Text::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 25px;
+}
+.main3_Text::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 25px;
+}
+.main3_Text::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* Sektion 4 - Fähigkeiten */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px auto;
+    width: 85%;
+    padding: 25px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.3);
+}
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.skill-icon {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+}
+.skill-info {
+    flex-grow: 1;
+}
+.skill-info span {
+    color: white;
+    font-family: 'Nanum Gothic Coding';
+    font-size: clamp(14px, 2vw, 20px);
+}
+.progress-bar-container {
+    background-color: #ccc;
+    border-radius: 5px;
+    height: 15px;
+    padding: 5px;
+    width: 98%;
+}
+.progress-bar {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 15px;
+    transition: width 0.5s ease;
+}
+
+/* Sektion 5 - Aktuelle Projekte*/
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px auto;
+    width: 85%;
+    padding: 25px;
+    padding-bottom: 35px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.project {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 25px 0;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 90%;
+    text-align: left; /* Text linksbündig */
+    color: white;
+    border-radius: 25px;
+    background-color: rgba(150,150,150,0.3);
+}
+.project-text h3 {
+    font-size: clamp(15px, 3vw, 25px);
+    font-family: 'Metal Mania';
+}
+.project-text p {
+    font-family: 'Nanum Gothic Coding';
+    font-size: clamp(14px, 2vw, 20px);
+}
+.project-text a {
+    font-family: 'Nanum Gothic Coding';
+    text-decoration: none;
+    color: red;
+    font-size: clamp(14px, 2vw, 20px);
+}
+.project-content {
+    display: flex; /* Flexbox für Bild und Text */
+    align-items: center; /* Zentriere die Elemente vertikal */
+}
+.project-image {
+    width: 100px; /* Breite des Bildes anpassen */
+    height: auto;
+    max-width: 100%; /* Maximale Breite beibehalten */
+    border-radius: 5px;
+    margin-right: 15px; /* Abstand zwischen Bild und Text */
+}
+.project-text {
+    flex: 1; /* Text nimmt den restlichen Platz ein */
+}
+
+/* Sektion 6 - Kontakt */
+.main6_Container {
+    margin: 35px auto;
+    width: 85%;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.main6_Form {
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    filter: brightness(100%) contrast(150%) grayscale(25%);
+    -webkit-filter: brightness(100%) contrast(150%) grayscale(25%);
+    opacity: 0.7;
+}

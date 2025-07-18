@@ -1,0 +1,29 @@
+.about-me {
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    max-width: 980px;
+    height: auto;
+    border-radius: 25px;
+    top: 35px;
+    left: 50%;
+    margin-bottom: 20px;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Dunklerer Hintergrund für besseren Kontrast */
+    padding: 25px;
+    color: white; /* Schriftfarbe weiß */
+    line-height: 1.6; /* Zeilenabstand für bessere Lesbarkeit */
+    font-size: 16px; /* Schriftgröße für bessere Lesbarkeit */
+    font-family: 'Nanum Gothic Coding';
+    text-align: justify;
+}
+img {
+    
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}

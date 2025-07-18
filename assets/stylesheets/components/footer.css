@@ -1,0 +1,115 @@
+/* Footer-Container */
+footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0px;
+    top: 125px;
+    background-color: rgba(25,25,25,0.8);
+    color: white;
+    position: relative;
+    font-family: 'Nanum Gothic Coding';
+    box-shadow: 0 0 50px white;
+    border-radius: 25px 25px 0 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* Logos */
+.footerLogoLeft, .footerLogoRight {
+    width: 50px;
+    height: 50px;
+    padding: 25px;
+    object-fit: contain;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* Vertikale Trennlinien */
+.footerLogoLeft::after, .footerLogoRight::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 95px;
+    background-color: white;
+}
+
+.footerLogoLeft::after {
+    right: 60px;
+}
+
+.footerLogoRight::before {
+    left: 60px;
+}
+
+/* Navigation im Footer */
+footer nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+footer nav a:hover {
+    color: rgba(200,0,0,0.7);
+    scale: 1.1;
+}
+footer nav a:active {
+    color: rgba(150,0,0,0.8);
+    scale: 0.9;
+}
+
+/* Copyright-Text */
+footer .copyright {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    width: 100%;
+    color: rgba(125,125,125,0.7);
+}
+
+/* Mobile Ansicht */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerLogoLeft, .footerLogoRight {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .footerLogoRight {
+        display: none;
+    }
+
+    footer nav {
+        justify-content: center;
+    }
+}
