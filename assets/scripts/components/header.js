@@ -5,7 +5,7 @@ document.addEventListener('contextmenu', function(event) {
 });
 const langbutton = document.getElementById("lang");
 //langbutton.addEventListener("click", function() {
-//   window.location.href = "/language/en/";
+//   window.location.href = "/lang/en/";
 //})
 
 function toggleMenu() {

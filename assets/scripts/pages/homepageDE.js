@@ -95,14 +95,14 @@ const projects = [
     {
         title: "Ein kleines Browser-Minigame - Light Logic Game",
         description: "Hier habe ich versucht ein kleines Browsergame zu programmieren, bei dem es darauf ankommt sein Geschick zu beweisen. (Durch einige Änderungen an den Dateipfaden kann es zu Fehlern kommen. Diese werden in Zukunft noch behoben)",
-        link: "https://server.areimann.de/projects/games/projekte/001.light-logic-game/", // Link zum Projekt
-        image: "https://server.areimann.de/projects/games/projekte/001.light-logic-game/assets/images/logo.png" // Bild des Projekts
+        link: "#", // Link zum Projekt
+        image: "#" // Bild des Projekts
     },
     {
         title: "Aktiver YouTube Kanal",
         description: "Ich würde dies als Projekt mit aufnehmen, da ich hier meine Videoschnitt Skills aufbessere und mit neuen Funktionen versuche meine Fähigkeiten im Schnitt zu verbessern.",
-        link: "https://youtube.com/@apixoffiziell",
-        image: "https://server.areimann.de/images/areimann.de/icons/logos/youtube.png"
+        link: "#",
+        image: "#"
     },
     // Weitere Projekte können hier hinzugefügt werden
 ];
