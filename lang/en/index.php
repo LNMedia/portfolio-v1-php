@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" type="image/png" href="https://projects.areimann.de/archive/portfolio-v1/assets/img/favicon.png">
+        <link rel="icon" type="image/png" href="https://projects.areimann.de/archive/demos/portfolio-v1/assets/img/favicon.png">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,16 +13,16 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="https://projects.areimann.de/archive/portfolio-v1/assets/stylesheets/main.css">
-        <link rel="stylesheet" href="https://projects.areimann.de/archive/portfolio-v1/assets/stylesheets/pages/homepage.css">
+        <link rel="stylesheet" href="https://projects.areimann.de/archive/demos/portfolio-v1/assets/stylesheets/main.css">
+        <link rel="stylesheet" href="https://projects.areimann.de/archive/demos/portfolio-v1/assets/stylesheets/pages/homepage.css">
     </head>
         
     <body>
         <!-- Background -->
-        <?php echo file_get_contents('https://projects.areimann.de/archive/portfolio-v1/assets/components/animated_triplet_element_darkgray_red.php'); ?>
+        <?php echo file_get_contents('https://projects.areimann.de/archive/demos/portfolio-v1/assets/components/animated_triplet_element_darkgray_red.php'); ?>
 
         <!-- Header -->
-        <?php echo file_get_contents('https://projects.areimann.de/archive/portfolio-v1/assets/components/headerEN.php'); ?>
+        <?php echo file_get_contents('https://projects.areimann.de/archive/demos/portfolio-v1/assets/components/headerEN.php'); ?>
         <style>
             #desktop_nav_main li:nth-child(1) a, #mobile_nav_main li:nth-child(1) a {
                 background: rgba(150,0,0,0.2);
@@ -34,8 +34,8 @@
         <main>
             <!-- Main Header Image -->
             <section id="main1">
-                <img class="main1_Banner" src="https://projects.areimann.de/archive/portfolio-v1/assets/img/big_pictures/mainBanner.png">
-                <img class="main1_Selfie" src="https://projects.areimann.de/archive/portfolio-v1/assets/img/self_pictures/front_1.png">
+                <img class="main1_Banner" src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/img/big_pictures/mainBanner.png">
+                <img class="main1_Selfie" src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/img/self_pictures/front_1.png">
                 <h2 class="main1_Hey">Hey, i am</h2>
                 <h1 class="main1_Name">Andreas</h1>
                 <div class="main1_animatedTextContainer">
@@ -48,23 +48,23 @@
                 <h1 class="main2_Header">Overview</h1>
                 <div class="main2_menuContainer">
                     <div class="main2_MenuPoint" onclick="smoothScrollTo('main3')">
-                        <img src="https://projects.areimann.de/archive/portfolio-v1/assets/img/overview/aboutme.png" alt="Bild 1" class="main2_menuPointImage">
+                        <img src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/img/overview/aboutme.png" alt="Bild 1" class="main2_menuPointImage">
                         <p class="main2_menuPointText">About Me</p>
                     </div>
                     <div class="main2_MenuPoint" onclick="smoothScrollTo('main4')">
-                        <img src="https://projects.areimann.de/archive/portfolio-v1/assets/img/overview/skills.png" alt="Bild 2" class="main2_menuPointImage">
+                        <img src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/img/overview/skills.png" alt="Bild 2" class="main2_menuPointImage">
                         <p class="main2_menuPointText">Skills</p>
                     </div>
                     <div class="main2_MenuPoint" onclick="smoothScrollTo('main5')">
-                        <img src="https://projects.areimann.de/archive/portfolio-v1/assets/img/overview/projects.png" alt="Bild 3" class="main2_menuPointImage">
+                        <img src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/img/overview/projects.png" alt="Bild 3" class="main2_menuPointImage">
                         <p class="main2_menuPointText">Projekts</p>
                     </div>
                     <div class="main2_MenuPoint" onclick="smoothScrollTo('main6')">
-                        <img src="https://projects.areimann.de/archive/portfolio-v1/assets/img/overview/contact.png" alt="Bild 4" class="main2_menuPointImage">
+                        <img src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/img/overview/contact.png" alt="Bild 4" class="main2_menuPointImage">
                         <p class="main2_menuPointText">Contact</p>
                     </div>
                     <div class="main2_MenuPoint" onclick="navigateToPage('pages/cv.php')">
-                        <img src="https://projects.areimann.de/archive/portfolio-v1/assets/img/overview/cv.png" alt="Bild 5" class="main2_menuPointImage">
+                        <img src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/img/overview/cv.png" alt="Bild 5" class="main2_menuPointImage">
                         <p class="main2_menuPointText">Personal Resume</p>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
             <section id="main3">
                 <h1 class="main3_Header">About Me</h1>
                 <div class="main3_AboutMe">
-                    <img class="main3_Selfie" src="https://projects.areimann.de/archive/portfolio-v1/assets/img/self_pictures/front_1_transparent.png">
+                    <img class="main3_Selfie" src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/img/self_pictures/front_1_transparent.png">
                     <div class="main3_Text">
                         <p>
                             I am Andreas Reimann, a versatile video editor with a wide range of skills, particularly in video production. 
@@ -112,7 +112,7 @@
                 <h1 class="main4_Header">Skills</h1>
                 <div class="skills-container">
                     <div class="skill">
-                        <img src="https://projects.areimann.de/archive/portfolio-v1/assets/img/icons/skills/editing.png" alt="Video Editing Icon" class="skill-icon">
+                        <img src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/img/icons/skills/editing.png" alt="Video Editing Icon" class="skill-icon">
                         <div class="skill-info">
                             <span>Video Editing und Content Creation</span>
                             <div class="progress-bar-container">
@@ -121,7 +121,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <img src="https://projects.areimann.de/archive/portfolio-v1/assets/img/icons/skills/streaming.png" alt="Video Editing Icon" class="skill-icon">
+                        <img src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/img/icons/skills/streaming.png" alt="Video Editing Icon" class="skill-icon">
                         <div class="skill-info">
                             <span>LIVE Streaming</span>
                             <div class="progress-bar-container">
@@ -130,7 +130,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <img src="https://projects.areimann.de/archive/portfolio-v1/assets/img/icons/skills/music.png" alt="Video Editing Icon" class="skill-icon">
+                        <img src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/img/icons/skills/music.png" alt="Video Editing Icon" class="skill-icon">
                         <div class="skill-info">
                             <span>Musikproduction</span>
                             <div class="progress-bar-container">
@@ -139,7 +139,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <img src="https://projects.areimann.de/archive/portfolio-v1/assets/img/icons/skills/electrician.png" alt="Video Editing Icon" class="skill-icon">
+                        <img src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/img/icons/skills/electrician.png" alt="Video Editing Icon" class="skill-icon">
                         <div class="skill-info">
                             <span>Electronics engineer for energy and building technology</span>
                             <div class="progress-bar-container">
@@ -148,7 +148,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <img src="https://projects.areimann.de/archive/portfolio-v1/assets/img/icons/skills/development.png" alt="Video Editing Icon" class="skill-icon">
+                        <img src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/img/icons/skills/development.png" alt="Video Editing Icon" class="skill-icon">
                         <div class="skill-info">
                             <span>Web development (frontend (partly backend))</span>
                             <div class="progress-bar-container">
@@ -157,7 +157,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <img src="https://projects.areimann.de/archive/portfolio-v1/assets/img/icons/skills/podcast.png" alt="Video Editing Icon" class="skill-icon">
+                        <img src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/img/icons/skills/podcast.png" alt="Video Editing Icon" class="skill-icon">
                         <div class="skill-info">
                             <span>Podcasting</span>
                             <div class="progress-bar-container">
@@ -166,7 +166,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <img src="https://projects.areimann.de/archive/portfolio-v1/assets/img/icons/skills/movie.png" alt="Video Editing Icon" class="skill-icon">
+                        <img src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/img/icons/skills/movie.png" alt="Video Editing Icon" class="skill-icon">
                         <div class="skill-info">
                             <span>Moviemaking</span>
                             <div class="progress-bar-container">
@@ -193,8 +193,8 @@
         </main>
 
         <!-- Footer -->
-        <?php echo file_get_contents('https://projects.areimann.de/archive/portfolio-v1/assets/components/footerEN.php'); ?>
+        <?php echo file_get_contents('https://projects.areimann.de/archive/demos/portfolio-v1/assets/components/footerEN.php'); ?>
 
-        <script src="https://projects.areimann.de/archive/portfolio-v1/assets/scripts/pages/homepageEN.js"></script>
+        <script src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/scripts/pages/homepageEN.js"></script>
     </body>
 </html>

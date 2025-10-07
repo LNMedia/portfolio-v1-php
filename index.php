@@ -11,6 +11,6 @@
     </head>
 
     <body>
-        <script src="https://projects.areimann.de/archive/portfolio-v1/assets/scripts/langRedirect/langRedirect.js" defer></script>
+        <script src="https://projects.areimann.de/archive/demos/portfolio-v1/assets/scripts/langRedirect/langRedirect.js" defer></script>
     </body>
 </html>

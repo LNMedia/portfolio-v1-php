@@ -13,7 +13,7 @@ function langRedirect() {
         } else {
             sprache = 'en';
         }
-            window.location.href = '/archive/portfolio-v1/lang/' + sprache + '/pages/cv.php';
+            window.location.href = '/archive/demos/portfolio-v1/lang/' + sprache + '/pages/cv.php';
             }
 
 langRedirect()

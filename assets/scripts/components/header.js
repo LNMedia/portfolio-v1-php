@@ -38,13 +38,13 @@ document.addEventListener("DOMContentLoaded", function() {
         var currentUrl = window.location.href;
 
         // Wenn die URL "/de/" enthält, ersetze es durch "/en/"
-        if (currentUrl.includes("/de")) {
-            var newUrl = currentUrl.replace("/de", "/en");
+        if (currentUrl.includes("/de/")) {
+            var newUrl = currentUrl.replace("/de/", "/en/");
             window.location.href = newUrl;
         }
         // Wenn die URL "/en/" enthält, ersetze es durch "/de/" (optional, falls du einen Umschalter möchtest)
-        else if (currentUrl.includes("/en")) {
-            var newUrl = currentUrl.replace("/en", "/de");
+        else if (currentUrl.includes("/en/")) {
+            var newUrl = currentUrl.replace("/en/", "/de/");
             window.location.href = newUrl;  // Neue URL aufrufen
         }
     });
